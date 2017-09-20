@@ -28,7 +28,7 @@
     "hospitalrun-server-routes": "1.0.0-beta",
     "moment": "^2.15.2",
     "morgan": "^1.6.1",
-    "nano": "^6.2.0",
+    "nano": "^6.4.2",
     "node-uuid": "^1.4.2",
     "prompt": "^1.0.0",
     "snyk": "^1.17.5"
