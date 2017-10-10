@@ -3,7 +3,7 @@ services:
   nginx:
     build:
       args:
-        DOMAIN_NAME: lafiya.tsaron.com
+        DOMAIN_NAME: tsaron.com
       context: nginx/.
       dockerfile: Dockerfile
     links:
