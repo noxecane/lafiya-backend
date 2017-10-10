@@ -9,7 +9,7 @@ services:
     links:
       - hospitalrun
     ports:
-      - "8055:80"
+      - "80:80"
       - "443:443"
     image: hospitalrun_nginx
     volumes:
