@@ -18,7 +18,8 @@ var config = {
   logRequests: false,
   logFormat: 'default', // See http://www.senchalabs.org/connect/logger.html for log formats
   useGoogleAuth: false,
-  useCertBot: false
+  useCertBot: false,
+  disableOfflineSync: true
 };
 
 config.couchCredentials = function() {
@@ -42,5 +43,5 @@ config.couchDbURL = config.getProtocol(config.couchDbUseSsl) + config.couchDbSer
 config.couchAuthDbURL = config.getProtocol(config.couchDbUseSsl) + config.couchCredentials() + config.couchDbServer + ':' + config.couchDbPort;
 config.searchURL = 'http://elastic:changeme@elasticsearch:9200'; // ELASTIC SEARCH URL
 config.webDir = __dirname + '/public';
-config.serverInfo = 'Server Information to display to users when viewing about HospitalRun';
+config.serverInfo = 'Not your business';
 module.exports = config;
