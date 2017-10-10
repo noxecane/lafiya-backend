@@ -3,14 +3,14 @@ services:
   nginx:
     build:
       args:
-        DOMAIN_NAME: tsaron.com
+        DOMAIN_NAME: lafiya.tsaron.com
       context: nginx/.
       dockerfile: Dockerfile
     links:
       - hospitalrun
     ports:
-      - "80:80"
-      - "443:443"
+      - "8055:80"
+      - "8433:443"
     image: hospitalrun_nginx
     volumes:
       - ./data/nginx/letsencrypt:/etc/letsencrypt
